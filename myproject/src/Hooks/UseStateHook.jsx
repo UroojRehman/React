@@ -3,13 +3,15 @@ import React, { useState } from 'react'
 export const UseStateHook = () => {
     const [count, setCount] = useState(0)
     const [userName, setUserName] = useState("Guest User")
+
+    const [showText, setShowText] = useState(false)
     const increment = () => {
         setCount(count + 1);
     }
 
     // task 2
-    const handleOnChange =(e)=>{
-       setUserName(e.target.value) 
+    const handleOnChange = (e) => {
+        setUserName(e.target.value)
     }
     return (
         <div>
@@ -28,9 +30,19 @@ export const UseStateHook = () => {
                     <h1 className="text-center mt-5">Task:02 - OnChange Event</h1>
 
                     <div className="col-6 offset-3">
-                        <input type="text" className="form-control" placeholder="Enter Your Name" onChange={handleOnChange}/>
+                        <input type="text" className="form-control" placeholder="Enter Your Name" onChange={handleOnChange} />
                         <h2 className="text-center mt-3">Welcome {userName}</h2>
                     </div>
+                </div>
+
+                <div className="row">
+                    <h1 className="text-center mt-5">Task:03 - Hide/Show Text Conditional Rendering</h1>
+                    <div className="col-6 offset-">
+                       
+                        <p className='text-center mt-3 bg-info-subtle'>{showText && "Text show and hide using use state and conditional rendering...."}</p>
+                         <button className={showText? "btn btn-warning": "btn btn-success"} onClick={()=>{setShowText(!showText)}}>{showText ? "Hide" : "Show"}</button>
+                    </div>
+
                 </div>
             </div>
         </div>
