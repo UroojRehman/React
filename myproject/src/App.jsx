@@ -5,6 +5,8 @@ import { HomeComponent } from "./HomeComponent/HomeComponent";
 import { Layout } from "./Layout";
 import { AboutComponent } from "./AboutComponent";
 import { UseStateHook } from "./Hooks/useStateHook";
+import { UseRefHook } from "./Hooks/UseRefHook";
+import { UseEffectHook } from "./Hooks/UseEffectHook";
 const router = createBrowserRouter([
   // {
   //   path: "/",
@@ -29,6 +31,13 @@ const router = createBrowserRouter([
       {
         path:"/usestate",
         Component: UseStateHook
+      },
+      {
+        path:"/useref",
+        Component: UseRefHook
+      },{
+        path: "/useeffect",
+        Component: UseEffectHook
       }
 
     ]

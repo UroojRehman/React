@@ -15,6 +15,7 @@ export const HomeComponent = () => {
         <Card title="First Card" backTile = "1" Fcontent="First Card FrontSide" Bcontent="First Card Back Content"/>
         <Card title="Second Card" backTile = "1" Fcontent="Second Card FrontSide" Bcontent="Second Card Back Content"/>
         <Card title="Third Card" backTile = "1" Fcontent="Third Card FrontSide" Bcontent="Third Card Back Content"/>
+        
        
       </div>
      

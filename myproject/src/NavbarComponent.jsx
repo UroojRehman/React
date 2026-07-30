@@ -20,6 +20,12 @@ export const NavbarComponent = () => {
                 <li className="nav-item">
           <Link className="nav-link" to={"/usestate"}>UseState</Link>
         </li>
+              <li className="nav-item">
+          <Link className="nav-link" to={"/useref"}>UseRef</Link>
+        </li>
+              <li className="nav-item">
+          <Link className="nav-link" to={"/useeffect"}>useEffect</Link>
+        </li>
        
       </ul>
       <form className="d-flex" role="search">
