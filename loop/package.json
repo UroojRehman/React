@@ -1,5 +1,5 @@
 {
-  "name": "tailwind",
+  "name": "loop",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,17 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@headlessui/react": "^2.2.10",
-    "@heroicons/react": "^2.2.0",
-    "@tabler/icons-react": "^3.46.0",
-    "@tailwindcss/vite": "^4.3.3",
-    "clsx": "^2.1.1",
-    "flowbite": "^4.0.2",
-    "motion": "^12.43.0",
     "react": "^19.2.8",
-    "react-dom": "^19.2.8",
-    "tailwind-merge": "^3.6.0",
-    "tailwindcss": "^4.3.3"
+    "react-dom": "^19.2.8"
   },
   "devDependencies": {
     "@types/react": "^19.2.17",
